@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Light : MonoBehaviour
+{
+    public GameObject breakLight;
+    void Start()
+    {
+        breakLight.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetMouseButton(1))
+        {
+            breakLight.SetActive(true);
+        }
+        else
+        {
+            breakLight.SetActive(false);
+        }
+    }
+}
